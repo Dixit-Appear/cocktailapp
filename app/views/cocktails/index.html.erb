@@ -1,0 +1,35 @@
+<!-- banner img + js text -->
+<div class="page-container">
+  <div class="home-banner">
+    <div class="image-left">
+      <%= image_tag "banner.png", alt: "Le Wagon", width: 700 %>
+    </div>
+
+
+<div>
+  <span id="banner-typed-text"></span>
+</div>
+
+  </div>
+
+  <!-- Card -->
+  <div class="cards-box">
+
+
+  <div class="cards" >
+  <% @cocktails.each do |cocktail| %>
+  <%= link_to cocktail_path(cocktail) do %>
+  <div class="card-category" data-aos="fade-up" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/featured/?{drink},{cocktail}<%= (1..10000).to_a.sample %>)">
+    <h3><%=cocktail.name%></h3>
+  </div>
+   <% end %>
+   <% end %>
+  </div>
+
+  </div>
+</div>
+
+
+<script>
+  AOS.init();
+</script>

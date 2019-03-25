@@ -1,0 +1,16 @@
+<div class="page-container  ">
+    <div class="container add-cocktail text-center">
+        <div class="title-new-cocktail">
+          <h3>New Cocktails</h3>
+        </div>
+          <%= form_for(@cocktail) do |f| %>
+
+            <%= f.text_field :name, placeholder: "Cocktail Name" %>
+            <%= f.submit 'create cocktail', class: 'btn btn-ghost'%>
+
+          <% end %>
+          <div class="all-cocktail">
+           <%= link_to "All Cocktails", cocktails_path, class: "btn btn-ghost"%>
+          </div>
+    </div>
+</div>
