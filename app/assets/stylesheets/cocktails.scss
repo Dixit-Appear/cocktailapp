@@ -1,0 +1,54 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.banne-show{
+  text-decoration: none;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.description{
+  max-width: 50%;
+}
+
+.add-cocktail{
+  padding: 50px;
+  height: auto;
+  margin-top: 90px;
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.line{
+  text-align: center;
+  width: 100%;
+}
+
+.description-ingredients{
+  margin: 20px 20px 20px 0px;
+}
+
+.all-button{
+  margin-top: 30px;
+}
+
+.container-img{
+  margin-top: 30px;
+}
