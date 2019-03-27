@@ -30,6 +30,7 @@ gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
+gem 'searchkick', '~> 3.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

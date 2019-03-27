@@ -2,6 +2,96 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.page-container{
+  min-height: calc(100vh - 160px);
+}
+
+#banner-typed-text{
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-style: italic;
+  opacity: 0.7;
+}
+// Footer
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.container{
+  margin-bottom: 100px;
+}
+
+// Cocktails display card after crating
+
+.card-category a{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.card-category a:hover{
+  color: white;
+  text-decoration: white !important;
+}
+
+a:hover{
+  color: white;
+  text-decoration: white !important;
+}
+.card-category {
+  text-decoration: none;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-category:hover{
+  transform: scale(1.03);
+  text-decoration: white !important;
+}
+
+.cards-box{
+  margin: 50px 100px 50px 100px
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+// Specific CSS for your home-page
 
 
 .banne-show{
