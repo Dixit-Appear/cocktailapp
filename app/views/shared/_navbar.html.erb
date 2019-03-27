@@ -1,20 +1,27 @@
-   <div class="navbar-lewagon">
-      <div class="navbar-lewagon-actions d-none d-sm-flex">
-        <%= link_to "All cocktails", cocktails_path, class: "btn btn-ghost"  %>
-      </div>
-      <div class="navbar-lewagon-actions d-none d-sm-flex">
-        <%= link_to "Home", root_path, class: "btn btn-ghost"  %>
-      </div>
-      <div class="badge-container navbar-lewagon-actions d-none d-sm-flex">
-        <%= form_tag cocktails_path, method: :get do %>
-          <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Find a cocktail"
-          %>
-        <% end %>
-        <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-ghost" %>
-      </div>
-      <!-- displayed on phone / tablet -->
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Cocktail App</a>
 
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><%= link_to "Home", root_path, class: "btn btn-ghost" %> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><%= link_to "All cocktails", cocktails_path, class: "btn btn-ghost" %></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-ghost" %></a>
+      </li>
+    </ul>
+    <%= form_tag cocktails_path, class: "form-inline my-2 my-lg-0", method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control mr-sm-2",
+        placeholder: "Find a cocktail"
+      %>
+    <% end %>
+  </div>
+</nav>
