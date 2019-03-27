@@ -8,6 +8,8 @@
 require 'json'
 require 'open-uri'
 
+puts 'Creating ingredients...'
+
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 user_serialized = open(url).read
 ingredients = JSON.parse(user_serialized)
@@ -16,3 +18,12 @@ ingredients['drinks'].each do |ingredient|
   ing = Ingredient.create(name: ingredient["strIngredient1"])
 end
 
+puts 'Finished ingredients!'
+
+puts 'Creating cocktails...'
+
+cocktail = Cocktail.new( name: "Mojito" )
+cocktail.remote_photo_url = "https://www.giallozafferano.it/images/ricette/5/570/foto_hd/hd450x300.jpg"
+cocktail.save
+
+puts 'Finished cocktails!'

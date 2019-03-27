@@ -3,7 +3,7 @@
         <div class="title-new-cocktail">
           <h3>New Cocktails</h3>
         </div>
-          <%= form_for(@cocktail) do |f| %>
+          <%= simple_form_for(@cocktail) do |f| %>
 
             <%= f.text_field :name, placeholder: "Cocktail Name" %>
             <%= f.input :photo %>
