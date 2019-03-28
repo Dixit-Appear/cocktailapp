@@ -1,0 +1,37 @@
+.btn-banner{
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: transparent;
+  transition: background 0.3s ease;
+  color: black !important;
+  border: 1px solid black;
+  padding: 8px 24px;
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn-banner:hover{
+  color: white !important;
+  background-color: black;
+}
+
+.btn-3card{
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: transparent;
+  transition: background 0.3s ease;
+  color: black !important;
+  border: 1px solid black;
+  padding: 8px 24px;
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.btn-3card:hover{
+  color: white !important;
+  background-color: black;
+}

@@ -1,4 +1,48 @@
-.page-container{
-  min-height: calc(100vh - 160px);
+.home{
+  // min-height: calc(100vh - 160px);
+  // height: 100vh;
+  height: auto;
 }
 
+.banner{
+  margin-bottom: 150px;
+}
+
+.image-banner{
+  display: flex;
+  justify-content: center;
+}
+
+.button-left{
+  display: flex;
+  align-items: center;
+}
+
+.button-right{
+  display: flex;
+  align-items: center;
+}
+
+.description-right{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-description{
+  margin-bottom: 70px;
+}
+
+.description-right{
+  margin: 40px;
+}
+
+.image-home{
+  border-radius: 16px;
+}
+
+.image-banner{
+  width: 100%;
+}

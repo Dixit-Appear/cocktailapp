@@ -13,17 +13,7 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
-    <div class="footer">
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-        <div class="footer-copyright">
-          Create Cocktails <i class="fas fa-cocktail"></i> App
-        </div>
-    </div>
-
+    <%= render 'shared/footer' %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>
     </body>
