@@ -1,16 +1,27 @@
 .home{
   // min-height: calc(100vh - 160px);
   // height: 100vh;
-  height: auto;
+  // height: auto;
 }
 
 .banner{
-  margin-bottom: 150px;
+  margin-bottom: 180px;
+  margin-top: 20px;
+}
+
+.container-cocktails{
+  margin: 50px;
+  margin-bottom: 50px;
 }
 
 .image-banner{
-  display: flex;
-  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url('banner.jpg') ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  width: 1200px;
+  height: 540px;
+  width: 100%;
 }
 
 .button-left{
@@ -31,18 +42,13 @@
   justify-content: space-between;
 }
 
-.card-description{
-  margin-bottom: 70px;
-}
-
 .description-right{
-  margin: 40px;
+  margin: 40px 0px 40px 0px;
 }
 
 .image-home{
   border-radius: 16px;
+  width: 100%;
+  height: auto;
 }
 
-.image-banner{
-  width: 100%;
-}
