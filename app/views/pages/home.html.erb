@@ -45,18 +45,18 @@
 
     <div class="row container-cocktails">
       <div class="col-md">
+        <div class="card-description d-flex justify-content-between">
+          <div class="container image-left">
+            <%= image_tag "negroni.png", alt: "cocktail", width: 500, class: "image-home" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
         <div class="container description-right">
            <h1>Negroni®</h1>
            <h3>Special cocktails, create yours</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptas, quod ex atque, blanditiis veniam harum, quia omnis eius iure unde ullam rerum esse. Nulla assumenda atque temporibus, ab nam.</p>
            <%= link_to "Create yours", new_cocktail_path, class: "btn-3card" %>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="card-description d-flex justify-content-between">
-          <div class="container image-left">
-            <%= image_tag "negroni.png", alt: "cocktail", width: 500, class: "image-home" %>
-          </div>
         </div>
       </div>
     </div>
