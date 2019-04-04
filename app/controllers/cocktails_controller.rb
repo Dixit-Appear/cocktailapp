@@ -26,11 +26,11 @@ class CocktailsController < ApplicationController
   end
 
   # def edit
-  #   @cocktail = Cocktail.find(params[:id])
+  #   @cocktail = Cocktail.find(params[:cocktail_id])
   # end
 
   # def update
-  #   @cocktail = Cocktail.find(params[:id])
+  #   @cocktail = Cocktail.find(params[:cocktail_id])
   #   @cocktail.update(cocktail_params)
   #   redirect_to cocktails_path(@cocktail)
   # end

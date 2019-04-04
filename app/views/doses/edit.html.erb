@@ -1,0 +1,13 @@
+<div class="page-container">
+  <%= link_to "< Back to cocktail", cocktail_path, class: "back" %>
+  <div class="container d-flex justify-content-center">
+    <div class="d-flex text-center form-new-dose">
+      <h3 class="add-text">Edit Ingredient and description for <%=@cocktail.name%></h3>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit "Add", class: "btn btn-ghost" %>
+      <% end %>
+    </div>
+  </div>
+</div>
