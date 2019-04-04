@@ -8,14 +8,14 @@
     <div class="collapse navbar-collapse nav-item-pad" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item ">
-          <a class="nav-link" href="#"><%= link_to "Home", root_path, class: "btn btn-ghost" %> <span class="sr-only">(current)</span></a>
-        </li>
-  <!--       <li class="nav-item">
-          <a class="nav-link" href="#"><%= link_to "All cocktails", cocktails_path, class: "btn btn-ghost" %></a>
+          <a class="nav-link" href="#"><%= link_to "Home", root_path, class: "navbar-color btn" %> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-ghost" %></a>
-        </li> -->
+          <a class="nav-link" href="#"><%= link_to "All cocktails", cocktails_path, class: "navbar-color btn" %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Add Cocktail", new_cocktail_path, class: "navbar-color btn" %></a>
+        </li>
       </ul>
       <%= form_tag cocktails_path, class: "form-inline my-2 my-lg-0 search-bar", method: :get do %>
         <%= text_field_tag :query,
