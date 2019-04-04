@@ -34,9 +34,9 @@ cocktail = Cocktail.new(name: "Amaretto fizz")
 cocktail.remote_photo_url = "https://media.monin.com/us/media/catalog/product/B/u/Butter_Pecan_Amaretto_Sour-1534129787-0.png"
 cocktail.save
 
-cocktail = Cocktail.new( name: "Bitter orange & cardamom martinis" )
-cocktail.remote_photo_url = "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--73620_10.jpg?itok=pqbEDV1V"
-cocktail.save
+# cocktail = Cocktail.new( name: "Bitter orange & cardamom martinis" )
+# cocktail.remote_photo_url = "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--73620_10.jpg?itok=pqbEDV1V"
+# cocktail.save
 
 
 puts 'Finished cocktails!'
