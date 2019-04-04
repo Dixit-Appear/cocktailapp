@@ -2,10 +2,6 @@
   padding-bottom: 8px;
 }
 
-.search-bar{
-  padding-top: 16px;
-}
-
 .navbar{
   background-color: transparent !important;
 }
@@ -16,4 +12,16 @@
 
 .navbar-color{
   color: $brand-primary !important;
+}
+
+.pos-f-t{
+  background-color: $brand-secondary !important;
+}
+
+.search-title{
+  text-align: center;
+}
+
+.text-navbar{
+  width: 30%;
 }

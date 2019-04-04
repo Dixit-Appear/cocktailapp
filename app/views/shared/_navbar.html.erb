@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,4 +26,51 @@
       <% end %>
     </div>
   </nav>
+</div> -->
+
+<div class="container">
+  <div class="pos-f-t">
+    <div class="">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <div class="d-flex justify-content-around">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link" href="#"><%= link_to "Home", root_path, class: "navbar-color btn" %> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><%= link_to "All cocktails", cocktails_path, class: "navbar-color btn" %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><%= link_to "Add Cocktail", new_cocktail_path, class: "navbar-color btn" %></a>
+              </li>
+            </ul>
+            <div class="text-center text-navbar">
+              <h1>Cocktail app</h1>
+              <p>Create your speacial cocktail and user experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-light bg-lignt">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex justify-content-center search-title">
+        <div class="title-nav">
+          <a class="navbar-brand" href="#"><%= link_to "CocktailApp", root_path, class: "navbar-brand" %></a>
+        </div>
+        <div class="search-bar">
+          <%= form_tag cocktails_path, class: "form-inline my-2 my-lg-0 search-bar", method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control mr-sm-2",
+              placeholder: "Find a cocktail"
+            %>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </div>
 </div>
