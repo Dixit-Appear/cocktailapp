@@ -15,24 +15,61 @@
 }
 
 .image-banner{
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url('banner.jpg') ;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('banner.jpg') ;
   background-size: cover;
   background-position: center;
   border-radius: 16px;
   width: 1200px;
   height: 540px;
   width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h1{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.info h2{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.info p{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: lighter;
+  opacity: .8;
+  letter-spacing: 4px;
+}
+
+// Buttons banner
+@media (max-width: 600px) {
+  .buttons{
+    flex-flow: row wrap !important;
+    justify-content: space-around !important;
+  }
 }
 
 .button-left{
   display: flex;
   align-items: center;
+  margin: 10px;
 }
 
 .button-right{
   display: flex;
   align-items: center;
+  margin: 10px;
 }
+// finish buttons
 
 .description-right{
   width: 100%;
