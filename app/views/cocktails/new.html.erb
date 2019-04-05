@@ -1,18 +1,19 @@
-<div class="page-container  ">
-    <div class="container add-cocktail text-center">
-        <div class="title-new-cocktail">
-          <h3>New Cocktails</h3>
-        </div>
-          <%= simple_form_for(@cocktail) do |f| %>
-
-            <%= f.text_field :name, placeholder: "Cocktail Name" %>
-            <%= f.input :photo %>
-            <%= f.input :photo_cache, as: :hidden %>
-            <%= f.submit 'create cocktail', class: 'btn btn-ghost'%>
-
-          <% end %>
-          <div class="all-cocktail">
-           <%= link_to "All Cocktails", cocktails_path, class: "btn btn-ghost"%>
-          </div>
+<div class="container new-cocktail">
+  <div class="d-flex justify-content-center form-image">
+    <div class="form">
+      <h3>Create your special cocktail</h3>
+      <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.text_field :name, placeholder: "Cocktail Name", class: "name-input" %>
+        <%= f.input :photo, class: "upload-image" %>
+        <%= f.input :photo_cache, as: :hidden %>
+        <%= f.submit 'Create cocktail', class: 'btn btn-form'%>
+      <% end %>
     </div>
+    <div class="image-form">
+      <%= image_tag "image-form.png", class: "image-new-form", width: "500"%>
+    </div>
+  </div>
+<!--   <div class="all-cocktail">
+   <%= link_to "All Cocktails", cocktails_path, class: "btn btn-show"%>
+  </div> -->
 </div>

@@ -1,13 +1,18 @@
-<div class="page-container">
-  <%= link_to "< Back to cocktail", cocktail_path, class: "back" %>
-  <div class="container d-flex justify-content-center">
-    <div class="d-flex text-center form-new-dose">
-      <h3 class="add-text">Edit Ingredient and description for <%=@cocktail.name%></h3>
-      <%= simple_form_for [@cocktail, @dose] do |f| %>
+<div class="container new-cocktail">
+  <div class="d-flex justify-content-center form-image">
+    <div class="form">
+      <h3>Edit Ingredient and description for <%=@cocktail.name%></h3>
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
         <%= f.input :description %>
         <%= f.association :ingredient %>
-        <%= f.submit "Add", class: "btn btn-ghost" %>
-      <% end %>
+        <%= f.submit "Add", class: "btn btn-form" %>
+        <% end %>
+    </div>
+    <div class="image-form">
+      <%= image_tag "image-form.png", class: "image-new-form", width: "500"%>
     </div>
   </div>
+<!--   <div class="all-cocktail">
+   <%= link_to "All Cocktails", cocktails_path, class: "btn btn-show"%>
+  </div> -->
 </div>
